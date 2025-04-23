@@ -913,27 +913,34 @@ body {
 }
 
 
-#footer .supports .subscription_wrapper .insider {
+#footer .supports .subscription_wrapper {
+	/* background: #103e13; */
+}
 
+#footer .supports .subscription_wrapper .insider {
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 143%;
-	color: #ffffff;
-	padding: 6px 6px;
+	background: rgba(var(--neutral-white-rgb), 0.2);
+	border: 0;
 }
 
-#footer .supports .subscription_wrapper .insider:first-child{
-	background: rgba(var(--neutral-white-rgb), 0.2);
+
+#footer .supports .subscription_wrapper .insider::placeholder {
+	color: #d9dbe1;
+}
+
+#footer .supports .subscription_wrapper .insider:first-child {
+	padding: 12px 35px 10px 10px;
 	border-radius: 8px 0 0 8px;
-	border: 0;
 }
 
 
-#footer .supports .subscription_wrapper .insider:last-child{
-	background: rgba(var(--neutral-white-rgb), 0.2);
+#footer .supports .subscription_wrapper .insider:last-child {
+	padding: 10px;
 	border-radius: 0 8px 8px 0;
-	border: 0;
+	color: var(--neutral-white);
 }
 
 
